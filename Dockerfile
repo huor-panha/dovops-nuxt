@@ -16,13 +16,13 @@ RUN npm install
 # since it builds the server as well
 RUN npm run build
 
-# expose 5000 on container
-EXPOSE 5000
+# expose 8080 on container
+EXPOSE 8080
 
 # set app serving to permissive / assigned
 ENV NUXT_HOST=0.0.0.0
 # set app port
-ENV NUXT_PORT=5000
+ENV NUXT_PORT=8080
 
 # start the app
 CMD [ "npm", "start" ]
